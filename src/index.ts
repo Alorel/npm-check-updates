@@ -1,13 +1,24 @@
-import * as core from '@actions/core';
 import * as gh from '@actions/github';
 import * as fs from 'fs';
 
-core.debug('Debug message');
-core.warning('Warning message');
+function sortObj(inp: any): any {
+  return Object.keys(inp).sort().reduce(
+    (acc: any, k: string) => {
+      acc[k] = inp[k];
 
-console.log({
-  cwd: process.cwd(),
-  ls: fs.readdirSync(process.cwd()),
-  env: process.env,
-  ctx: gh.context
-});
+      return acc;
+    },
+    {}
+  );
+}
+
+console.log(require('util').inspect(
+  {
+    cwd: process.cwd(),
+    ls: fs.readdirSync(process.cwd()),
+    dirLs: fs.readdirSync(<string>process.env.GITHUB_WORKSPACE),
+    env: sortObj(process.env),
+    ctx: sortObj(gh.context)
+  },
+  {colors: true, depth: 100}
+));
