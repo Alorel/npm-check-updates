@@ -7,7 +7,8 @@
   "author": "Arturas Molcanovas <a.molcanovas@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "tsc": "rimraf dist && tsc"
+    "tsc": "rimraf dist && tsc",
+    "tsc:watch": "npm --node-prepend-path=auto run tsc -- --watch"
   },
   "devDependencies": {
     "@types/node": "~12.7.5",
