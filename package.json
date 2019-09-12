@@ -1,0 +1,21 @@
+{
+  "name": "npm-check-updates",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "repository": "git@github.com:Alorel/npm-check-updates.git",
+  "author": "Arturas Molcanovas <a.molcanovas@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "rimraf dist && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "~12.7.5",
+    "typescript": "~3.6.3"
+  },
+  "dependencies": {
+    "@actions/core": "~1.1.0",
+    "@actions/github": "~1.1.0",
+    "tslib": "^1.10.0"
+  }
+}

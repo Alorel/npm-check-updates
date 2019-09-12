@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "strictBindCallApply": true,
+    "target": "es2019",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "newLine": "lf",
+    "noFallthroughCasesInSwitch": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "importHelpers": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "strict": true,
+    "stripInternal": true,
+    "esModuleInterop": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "removeComments": false,
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "outDir": "dist"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,9 @@
+name: Node.js package upadte checker
+description: Checks for installed package updates
+inputs:
+  gh_token:
+    description: Github token used for making commits
+    required: true
+runs:
+  using: node12
+  main: dist/index.js
