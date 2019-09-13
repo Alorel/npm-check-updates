@@ -1,3 +1,3 @@
-import * as core from '@actions/core';
+import {Runtime} from './Runtime';
 
-console.log(core.getInput('gh_token', {required: true}));
+new Runtime();

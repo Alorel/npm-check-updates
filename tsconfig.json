@@ -4,7 +4,7 @@
     "strictBindCallApply": true,
     "target": "es2019",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+    "emitDecoratorMetadata": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "newLine": "lf",

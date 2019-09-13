@@ -12,11 +12,17 @@
   },
   "devDependencies": {
     "@types/node": "~12.7.5",
-    "typescript": "~3.6.3"
+    "@types/semver": "~6.0.2",
+    "@types/yamljs": "~0.2.30",
+    "typescript": "~3.6.3",
+    "yamljs": "^0.3.0"
   },
   "dependencies": {
     "@actions/core": "~1.1.0",
     "@actions/github": "~1.1.0",
+    "fs-extra": "~8.1.0",
+    "lazy-get-decorator": "~2.2.0",
+    "semver": "~6.3.0",
     "tslib": "^1.10.0"
   }
 }
